@@ -8,6 +8,10 @@ WITH(
 
 SELECT * FROM bronze.crm_cust_info;
 
+
+
+
+
 BULK INSERT bronze.crm_prd_info
 FROM 'C:\Users\teja goud\Downloads\datasets\datasets\source_crm\prd_info.csv'
 WITH(
@@ -18,7 +22,10 @@ WITH(
 
 SELECT * FROM bronze.crm_prd_info
 
+	
+	
 
+	
 BULK INSERT bronze.crm_sales_details
 FROM 'C:\Users\teja goud\Downloads\datasets\datasets\source_crm\sales_details.csv'
 WITH(
@@ -30,6 +37,9 @@ WITH(
 SELECT * FROM bronze.crm_sales_details
 
 
+
+
+	
 BULK INSERT bronze.erp_cust_az12
 FROM 'C:\Users\teja goud\Downloads\datasets\datasets\source_erp\cust_az12.csv'
 WITH(
@@ -41,6 +51,9 @@ WITH(
 SELECT * FROM bronze.erp_cust_az12;
 
 
+
+
+
 BULK INSERT bronze.erp_loc_a101
 FROM 'C:\Users\teja goud\Downloads\datasets\datasets\source_erp\loc_a101.csv'
 WITH(
@@ -50,6 +63,8 @@ WITH(
 );
 
 SELECT * FROM bronze.erp_loc_a101;
+
+
 
 
 
