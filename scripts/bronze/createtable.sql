@@ -1,11 +1,13 @@
 CREATE DATABASE datawarehouse;
-
 use datawarehouse;
+
+
+
 create schema bronze;
-
 create schema silver;
-
 create schema gold;
+
+
 
 CREATE TABLE bronze.crm_cust_info (
     cst_id INT,
@@ -17,6 +19,8 @@ CREATE TABLE bronze.crm_cust_info (
     cst_create_date DATE
 );
 
+
+
 CREATE TABLE bronze.crm_prd_info (
     prd_id INT,
     prd_key NVARCHAR(50),
@@ -26,6 +30,7 @@ CREATE TABLE bronze.crm_prd_info (
     prd_start_dt DATETIME,
     prd_end_dt DATETIME
 );
+
 
 
 CREATE TABLE bronze.crm_sales_details (
@@ -40,22 +45,25 @@ CREATE TABLE bronze.crm_sales_details (
     sls_price INT
 );
 
+
+
 create table bronze.erp_loc_a101(
 	cid nvarchar(50),
 	cntry nvarchar(50)
 );
 
 
+
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL 
     DROP TABLE bronze.erp_cust_az12;
 GO
-
 CREATE TABLE bronze.erp_cust_az12 (
     cid NVARCHAR(50),
     bdate DATE,
     gen NVARCHAR(50)
 );
 GO
+
 
 
 create table bronze.erp_px_cat_g1v2(
