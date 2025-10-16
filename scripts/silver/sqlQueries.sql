@@ -89,6 +89,8 @@ INSERT INTO silver.crm_prd_info (
 				AS DATE
 			) AS prd_end_dt -- Calculate end date as one day before the next start date
 		FROM bronze.crm_prd_info
+
+	
 -- We need to change the data type of date as they are int type so before inserting the data we are going to change the data types in the table 
 
 
