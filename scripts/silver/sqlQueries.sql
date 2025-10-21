@@ -109,10 +109,12 @@ CREATE TABLE silver.crm_sales_details (
     dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
 
+
+
+
 	
 
 -- insert into crm_sales_details 
-
 
 INSERT INTO silver.crm_sales_details (
 			sls_ord_num,
@@ -161,8 +163,6 @@ INSERT INTO silver.crm_sales_details (
 
 -- Query to insert the data into silver.erp_cust_az12
 
-
-
 INSERT INTO silver.erp_cust_az12 (
 			cid,
 			bdate,
@@ -186,8 +186,10 @@ SELECT
 
 
 
--- Query to insert the data into silver.erp_loc_a101
 
+
+
+-- Query to insert the data into silver.erp_loc_a101
 
 INSERT INTO silver.erp_loc_a101 (
 			cid,
@@ -203,9 +205,12 @@ INSERT INTO silver.erp_loc_a101 (
 			END AS cntry -- Normalize and Handle missing or blank country codes
 		FROM bronze.erp_loc_a101;
 
+
+
+
+
+
 --  Query to insert the data into silver.erp_px_cat_g1v2
-
-
 
 INSERT INTO silver.erp_px_cat_g1v2 (
 			id,
