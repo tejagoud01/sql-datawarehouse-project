@@ -44,6 +44,9 @@ WHERE pn.prd_end_dt IS NULL; -- Filter out all historical data
 GO
 
 
+
+
+    
 CREATE VIEW gold.fact_sales AS
 SELECT
     sd.sls_ord_num  AS order_number,
